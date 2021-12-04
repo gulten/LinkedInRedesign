@@ -4,9 +4,10 @@
     width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
-    border-radius: 4px;
+    @include custom-button-radius;
     &-title {
         position: relative;
+        text-transform: uppercase;
         img {
             width: 100%;
         }
@@ -42,10 +43,14 @@
                 }
                 &:hover {
                     background-color: rgba(255, 255, 255, 1);
+                    text-decoration: none;
                     &:before {
                         filter: invert(25%) sepia(73%) saturate(2374%) hue-rotate(181deg) brightness(97%) contrast(98%);
                     }
                 }
+            }
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
