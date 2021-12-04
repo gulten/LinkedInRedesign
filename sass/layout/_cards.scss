@@ -123,6 +123,42 @@
                     font-weight: 500;
                 }
             }
+            .id-card {
+                width: 250px;
+                height: 80px;
+                padding: 15px 20px;
+                @include custom-border-all;
+                border-radius: 6px;
+                .title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    line-height: 21px;
+                    font-weight: 700;
+                }
+                ul.img-list {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 5px;
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        width: 24px;
+                        height: 24px;
+                        margin-left: -6px;
+                        border-radius: 100%;
+                        @include custom-button-gradient;
+                        color: #fff;
+                        font-weight: 700;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
