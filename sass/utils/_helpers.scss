@@ -52,3 +52,9 @@
         color: $default-active-font-color !important;
     }
 }
+.upper-case {
+    text-transform: uppercase !important;
+}
+.custom-font-size {
+    font-size: $default-font-size !important;
+}
