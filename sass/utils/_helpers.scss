@@ -12,6 +12,12 @@
 @include list-loop('.p-l-', 'padding-left');
 @include list-loop('.p-x-', 'padding');
 
+//position
+@include list-loop('.t-', 'top');
+@include list-loop('.r-', 'right');
+@include list-loop('.b-', 'bottom');
+@include list-loop('.l-', 'left');
+
 
 //Align
 .align-center {
@@ -22,4 +28,12 @@
 }
 .align-right {
     text-align: right;
+}
+
+//position
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
 }
