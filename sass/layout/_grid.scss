@@ -27,3 +27,17 @@
     grid-template-columns: repeat(3, auto);
     width: 100%;
 }
+
+//flex
+.d-flex {
+    display: flex;
+}
+.flex-align-center {
+   align-items: center; 
+}
+.flex-align-start {
+   align-items: flex-end; 
+}
+.flex-align-end {
+   align-items: flex-end; 
+} 

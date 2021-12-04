@@ -9,6 +9,7 @@ $custom-grid-y-space: 30px;
 $regular-font-family: 'Gotham', Arial;
 
 //default menu
+$default-font-size: 12px;
 $top-font-size: 12px;
 
 
@@ -18,10 +19,17 @@ $section-font-size-title: 18px;
 $section-font-size-text: 14px;
 
 //colors
-$default-font-color: '#181818';
-$default-passive-font-color: '#CECECE';
+$default-font-color: #181818;
+$default-passive-font-color: #CECECE;
+$default-active-font-color: #0275B1;
+
+//border colors
+$active-border-color: #0275B1;
+$passive-border-color: #F4F4F4;
 
 $primary: #0275B1;
+$gray: #747474; 
+$green: #02B033; 
 
 //media
 $media-xl: 1400px;

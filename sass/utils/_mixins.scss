@@ -10,3 +10,56 @@ $unit: 'px';
     $i: $i + $offset;
   }
 }
+
+
+//item-box
+@mixin custom-item-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 9px;
+}
+@mixin custom-item-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 2px transparent;
+    padding: 18px 37px 15px 28px;
+    text-transform: uppercase;
+    transition: all .5s ease-in;
+    font-weight: 700;
+    img {
+      transition: all .5s ease-in;
+      @include custom-item-icon;
+    }
+    &:hover  {
+      border-bottom-color: $active-border-color;
+      img {
+        filter: invert(25%) sepia(73%) saturate(2374%) hue-rotate(181deg) brightness(97%) contrast(98%);
+      }
+    }
+}
+
+
+//custom border
+$align-list: 'top', 'right', 'bottom', 'left';
+@mixin custom-border-all {
+  border: 1px solid $passive-border-color;
+}
+@mixin custom-border-top {
+  border-top: 1px solid $passive-border-color;
+}
+@mixin custom-border-right {
+  border-right: 1px solid $passive-border-color;
+}
+@mixin custom-border-bottom {
+  border-bottom: 1px solid $passive-border-color;
+}
+@mixin custom-border-left {
+  border-left: 1px solid $passive-border-color;
+}
+
+@each $align in $align-list {
+  .custom-border-#{$align} {
+    border-#{$align}:  1px solid $passive-border-color;
+  }
+}
