@@ -1,0 +1,29 @@
+.container-fluid {
+    width: 100%;
+}
+.container-xl {
+    width: $container-xl-width;
+}
+.container-md {
+    width: $container-md-width;
+}
+
+.container-grid-full {
+    display: grid;
+    grid-template-columns: auto $container-xl-width auto;
+    width: 100%;
+}
+
+.container-grid-custom-2 {
+    display: grid;
+    grid-template-columns: $container-md-width $sidebar-xl-width;
+    width: $container-xl-width;
+}
+
+
+//auto grid
+.auto-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
+}
