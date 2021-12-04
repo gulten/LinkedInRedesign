@@ -13,7 +13,7 @@ ul.top-nav {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-left: 20px;
+    padding-left: 21px;
     @include custom-border-left;
     @include custom-border-right;
     li {
@@ -35,7 +35,7 @@ ul.top-nav {
         height: 24px;
     }
     input {
-        padding: 10px 10px 10px 15px;
+        padding: 10px 54px 10px 15px;
         border: none ;
         background-color: #fff;
         font-family: $regular-font-family;
