@@ -5,7 +5,7 @@ $unit: 'px';
   $i: 0;
   @while $i <= $max {
     #{$className + $i} { 
-      #{$styleName}: #{$i + $unit};
+      #{$styleName}: #{$i + $unit} !important;
     }
     $i: $i + $offset;
   }

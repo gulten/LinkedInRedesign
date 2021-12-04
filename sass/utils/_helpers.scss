@@ -21,13 +21,13 @@
 
 //Align
 .align-center {
-    text-align: center;
+    text-align: center !important;
 }
 .align-left {
-    text-align: left;
+    text-align: left !important;
 }
 .align-right {
-    text-align: right;
+    text-align: right !important;
 }
 
 //position
@@ -41,4 +41,14 @@
 //color
 .bg-color-white {
     background-color: #fff;
+}
+
+//font
+.bold {
+    font-weight: 700 !important;
+}
+.active {
+    &-text {
+        color: $default-active-font-color !important;
+    }
 }
