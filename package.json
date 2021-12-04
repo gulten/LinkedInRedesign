@@ -1,0 +1,33 @@
+{
+  "name": "linkedinredesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prod": "gulp buildStyles",
+    "dev": "gulp buildStyles",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulten/LinkedInRedesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gulten/LinkedInRedesign/issues"
+  },
+  "homepage": "https://github.com/gulten/LinkedInRedesign#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.44.0"
+  },
+  "browserslist": [
+    "last 5 version",
+    "> 1%",
+    "IE 10"
+  ]
+}
