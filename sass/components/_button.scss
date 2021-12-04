@@ -1,0 +1,14 @@
+.custom-button {
+    padding: 10px;
+    background-color: #fff;
+    @include custom-button-radius;
+    color: $default-active-font-color;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: solid 1px $active-border-color;
+    &:hover {
+        @include custom-button-gradient;
+        color: #fff;
+        border-color: transparent;
+    };
+}

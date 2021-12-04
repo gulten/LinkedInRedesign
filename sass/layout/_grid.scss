@@ -41,6 +41,12 @@
 .d-flex {
     display: flex;
 }
+.flex-row {
+   flex-direction: row; 
+}
+.flex-column {
+   flex-direction: column; 
+}
 .d-align-center {
    align-items: center; 
 }
@@ -50,3 +56,9 @@
 .d-align-end {
    align-items: flex-end; 
 } 
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}

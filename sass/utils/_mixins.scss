@@ -1,4 +1,4 @@
-$max: 80;
+$max: 50;
 $offset: 5;
 $unit: 'px'; 
 @mixin list-loop($className, $styleName) {
@@ -11,7 +11,10 @@ $unit: 'px';
   }
 }
 
-
+//transition
+@mixin custom-all-transition {
+  transition: all .5s ease-in;
+}
 //item-box
 @mixin custom-item-icon {
     width: 24px;
@@ -25,10 +28,10 @@ $unit: 'px';
     border-bottom: solid 2px transparent;
     padding: 18px 37px 15px 28px;
     text-transform: uppercase;
-    transition: all .5s ease-in;
+    @include custom-all-transition;
     font-weight: 700;
     img {
-      transition: all .5s ease-in;
+      @include custom-all-transition;
       @include custom-item-icon;
     }
     &:hover  {
@@ -62,4 +65,13 @@ $align-list: 'top', 'right', 'bottom', 'left';
   .custom-border-#{$align} {
     border-#{$align}:  1px solid $passive-border-color;
   }
+}
+
+//custom button 
+@mixin custom-button-gradient {
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+}
+
+@mixin custom-button-radius {
+  border-radius: 4px;
 }

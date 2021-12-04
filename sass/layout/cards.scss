@@ -1,33 +1,87 @@
 .card {
-    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
     border-radius: 4px;
-    a {
-        &[role=button] {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: 132px;
-            height: 36px;
-            background: rgba(255, 255, 255, 0.9);
-            box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
-            border-radius: 4px;
-            text-transform: uppercase;
+    &-title {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        a {
+            &[role=button] {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                height: 36px;
+                color: $default-font-color;
+                background: rgba(255, 255, 255, 0.9);
+                box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+                border-radius: 4px;
+                text-transform: uppercase;
+                @include custom-all-transition;
+                &.edit {
+                    width: 132px;
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 10px;
+                        background-image: url(../images/icons/edit.svg);
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        @include custom-all-transition;
+                    }
+                }
+                &.more {
+                    width: 36px;
+                }
+                &:hover {
+                    background-color: rgba(255, 255, 255, 1);
+                    &:before {
+                        filter: invert(25%) sepia(73%) saturate(2374%) hue-rotate(181deg) brightness(97%) contrast(98%);
+                    }
+                }
+            }
+        }
+    }
+    &-text {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .profile-photo {
+            margin-top: -30px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .location {
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            grid-gap: 10px;
+            font-size: $default-font-size;
+            line-height: 16px;
             &:before {
                 content: "";
                 display: block;
-                width: 16px;
-                height: 16px;
-                margin-right: 10px;
-                background-image: url(../images/icons/edit.svg);
+                width: 13px;
+                height: 13px;
+                background-image: url(../images/icons/navigation.svg);
                 background-repeat: no-repeat;
-                background-position: center center;
             }
+        }
+        p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 300;
+            padding-right: 17px;
         }
     }
 }
