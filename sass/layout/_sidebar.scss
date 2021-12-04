@@ -1,3 +1,55 @@
 .sidebar {
     width: $sidebar-xl-width;
+    padding: 30px 30px 30px 25px;
+    background-color: #fff;
+    h6 {
+        font-weight: 700;
+    }
+    .info-panel {
+        padding-top: 20px;
+        .count-info {
+            font-size: 52px;
+            line-height: 52px;
+            font-weight: 700;
+            color: $default-active-font-color;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .content-panel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 15px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        .play{
+            display: block;
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            left: 30px;
+            @include custom-button-gradient;   
+            &:before {
+                content: "";
+                display: block;
+                width: 18px;
+                height: 18px;
+                background-image: url(../images/icons/play.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        .content {
+            margin-left: 15px;
+            p {
+                margin-top: 5px;
+                font-size: 10px;
+                line-height: 15px;
+            }
+        }
+    }
 }
