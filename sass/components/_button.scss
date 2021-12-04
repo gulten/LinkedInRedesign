@@ -1,9 +1,12 @@
 .custom-button {
-    padding: 10px;
+    padding: 9px;
+    width: 170px;
     background-color: #fff;
     @include custom-button-radius;
     color: $default-active-font-color;
     text-transform: uppercase;
+    font-size: $default-font-size;
+    line-height: $default-font-size;
     font-weight: 500;
     border: solid 1px $active-border-color;
     &:hover {
