@@ -39,26 +39,29 @@
 
 //flex
 .d-flex {
-    display: flex;
+    display: flex !important;
 }
 .flex-row {
-   flex-direction: row; 
+   flex-direction: row !important; 
 }
 .flex-column {
-   flex-direction: column; 
+   flex-direction: column !important; 
 }
 .d-align-center {
-   align-items: center; 
+   align-items: center !important; 
 }
 .d-align-start {
-   align-items: flex-end; 
+   align-items: flex-start !important; 
 }
 .d-align-end {
-   align-items: flex-end; 
+   align-items: flex-end !important; 
 } 
 .justify-between {
-    justify-content: space-between;
+    justify-content: space-between !important;
 }
 .justify-center {
-    justify-content: center;
+    justify-content: center !important;
+}
+.justify-start {
+    justify-content: start !important;
 }
