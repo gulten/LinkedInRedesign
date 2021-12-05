@@ -13,5 +13,8 @@
         @include custom-button-gradient;
         color: #fff;
         border-color: transparent;
+        img {
+            filter: invert(25%) sepia(73%) saturate(2374%) hue-rotate(181deg) brightness(97%) contrast(98%);
+        }
     };
 }

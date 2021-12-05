@@ -1,0 +1,39 @@
+footer {
+    background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
+    @include custom-border-top;
+    .footer-logo {
+        size: 14px;
+        line-height: 21px;
+        img {
+            width: 46px;
+            height: 46px;
+            margin-bottom: 12px;
+        }
+        &:hover {
+            color: $default-font-color;
+        }
+    }
+    .nav-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        ul {
+            margin-right: 40px;
+            li {
+                padding: 10px 0;
+                a {
+                    font-size: $default-font-size;
+                    line-height: $default-font-size;;
+                    color: $default-font-color;
+                }
+            }
+        }
+    }
+    .footer-button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
