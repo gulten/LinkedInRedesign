@@ -212,4 +212,25 @@
             }
         }
     }
+    &.tab-select-card  {
+        padding: 0;
+        @include custom-border-bottom;
+        background-color: transparent;
+        border-radius: 0;
+        .card-title {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .card-text {
+            width: 100%;
+            height: 30px;
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
+        }
+    }
+    &.tabs-card {
+        border-radius: 0 0 $default-border-radius $default-border-radius;
+    }
 }

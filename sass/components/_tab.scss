@@ -1,0 +1,23 @@
+.custom-tab {
+    padding: 15px;
+    width: 240px;
+    height: 40px;
+    background-color: #fff;
+    @include custom-button-radius;
+    color: $default-active-font-color;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+    line-height: $default-font-size;
+    font-weight: 500;
+    border: solid 1px $passive-border-color;
+    transition: all .1s linear;
+    &:hover, &.active {
+        padding: 20px;
+        height: 50px;
+        @include custom-button-gradient;
+        font-size: $default-font-size;
+        line-height: $default-font-size;
+        color: #fff;
+        border-color: transparent;
+    };
+}
