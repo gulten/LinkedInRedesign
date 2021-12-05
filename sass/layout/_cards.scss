@@ -97,6 +97,11 @@
             line-height: 18px;
             font-weight: 700;
             text-transform: none;
+            span {
+                margin-left: 15px;
+                font-weight: 300;
+                color: #747474;
+            }
         }
         .card-text {
             align-items: flex-start;
@@ -155,6 +160,52 @@
                         font-weight: 700;
                         &:first-child {
                             margin-left: 0;
+                        }
+                    }
+                }
+            }
+            .slider {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                width: 100%;
+                ul {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    width: 100%;
+                    &:before, &:after {
+                        position: absolute;
+                        font-size: 24px;
+                        color: $default-active-font-color;
+                        top: 70px;
+                        cursor: pointer;
+                    }    
+                    &:before {
+                        content: "<";
+                        left: -20px;
+                    }
+                    &:after {
+                        content: ">";
+                        right: 0;
+                    }
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 20px;
+                        .title {
+                            margin-top: 15px;
+                            font-size: 14px;
+                            line-height: 21px;
+                            font-weight: 700;
+                        }
+                        .text {
+                            margin-top: 5px;
+                            font-size: 10px;
+                            line-height: 15px;
+                            font-weight: 300;
                         }
                     }
                 }
