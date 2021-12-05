@@ -1,23 +1,24 @@
 @font-face {
     font-family: 'Gotham';
-    src: url('/fonts/gotham/light/Gotham-Light.eot');
-    src: url('/fonts/gotham/light/Gotham-Light.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/gotham/light/Gotham-Light.woff2') format('woff2'),
-        url('/fonts/gotham/light/Gotham-Light.woff') format('woff'),
-        url('/fonts/gotham/light/Gotham-Light.ttf') format('truetype'),
-        url('/fonts/gotham/light/Gotham-Light.svg#Gotham-Light') format('svg');
+    src: url('../fonts/gotham/light/Gotham-Light.eot');
+    src: url('../fonts/gotham/light/Gotham-Light.eot');
+    src: url('../fonts/gotham/light/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gotham/light/Gotham-Light.woff2') format('woff2'),
+        url('../fonts/gotham/light/Gotham-Light.woff') format('woff'),
+        url('../fonts/gotham/light/Gotham-Light.ttf') format('truetype'),
+        url('../fonts/gotham/light/Gotham-Light.svg#Gotham-Light') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham';
-    src: url('/fonts/gotham/book/Gotham-Book.eot');
-    src: url('/fonts/gotham/book/Gotham-Book.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/gotham/book/Gotham-Book.woff2') format('woff2'),
-        url('/fonts/gotham/book/Gotham-Book.woff') format('woff'),
-        url('/fonts/gotham/book/Gotham-Book.ttf') format('truetype'),
-        url('/fonts/gotham/book/Gotham-Book.svg#Gotham-Book') format('svg');
+    src: url('../fonts/gotham/book/Gotham-Book.eot');
+    src: url('../fonts/gotham/book/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gotham/book/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/gotham/book/Gotham-Book.woff') format('woff'),
+        url('../fonts/gotham/book/Gotham-Book.ttf') format('truetype'),
+        url('../fonts/gotham/book/Gotham-Book.svg#Gotham-Book') format('svg');
     font-weight: 500;
     font-weight: no;
     font-style: normal;
@@ -25,13 +26,25 @@
 
 @font-face {
     font-family: 'Gotham';
-    src: url('/fonts/gotham/bold/Gotham-Black.eot');
-    src: url('/fonts/gotham/bold/Gotham-Black.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/gotham/bold/Gotham-Black.woff2') format('woff2'),
-        url('/fonts/gotham/bold/Gotham-Black.woff') format('woff'),
-        url('/fonts/gotham/bold/Gotham-Black.ttf') format('truetype'),
-        url('/fonts/gotham/bold/Gotham-Black.svg#Gotham-Black') format('svg');
+    src: url('../fonts/gotham/bold/Gotham-Medium.eot');
+    src: url('../fonts/gotham/bold/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gotham/bold/Gotham-Medium.woff2') format('woff2'),
+        url('../fonts/gotham/bold/Gotham-Medium.woff') format('woff'),
+        url('../fonts/gotham/bold/Gotham-Medium.ttf') format('truetype'),
+        url('../fonts/gotham/bold/Gotham-Medium.svg#Gotham-Black') format('svg');
     font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/bold/Gotham-Black.eot');
+    src: url('../fonts/gotham/bold/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gotham/bold/Gotham-Black.woff2') format('woff2'),
+        url('../fonts/gotham/bold/Gotham-Black.woff') format('woff'),
+        url('../fonts/gotham/bold/Gotham-Black.ttf') format('truetype'),
+        url('../fonts/gotham/bold/Gotham-Black.svg#Gotham-Black') format('svg');
+    font-weight: 900;
     font-style: normal;
 }
 
