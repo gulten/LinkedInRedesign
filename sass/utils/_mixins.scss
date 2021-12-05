@@ -22,6 +22,7 @@ $unit: 'px';
     margin-bottom: 9px;
 }
 @mixin custom-item-box {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
