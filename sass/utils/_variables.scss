@@ -1,7 +1,9 @@
-$container-xl-width: 1181px;
+$container-xl-width: 1180px;
 $container-md-width: 850px;
+$container-sm-width: 650px;
 
 $sidebar-xl-width: 290px;
+$sidebar-md-width: 200px;
 
 $custom-grid-x-space: 40px;
 $custom-grid-y-space: 30px;
@@ -23,6 +25,8 @@ $default-font-color: #181818;
 $default-passive-font-color: #CECECE;
 $default-active-font-color: #0275B1;
 
+$sidebar-color: #FCFDFD;
+
 //border colors
 $active-border-color: #0275B1;
 $passive-border-color: #F4F4F4;
@@ -36,3 +40,7 @@ $media-xl: 1400px;
 
 //border
 $default-border-radius: 4px;
+
+
+//media
+$media-md-size: 1336px;

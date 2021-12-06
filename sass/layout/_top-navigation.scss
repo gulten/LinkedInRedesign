@@ -1,8 +1,10 @@
 
 .logo {
-    display: block;
+    display: flex;
     width: 100%;
-    padding: 17px 44px 17px 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
     img {
         float: right;
         width: 46px;
@@ -13,7 +15,8 @@ ul.top-nav {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-left: 21px;
+    padding-left: 14px;
+    padding-right: 20px;
     @include custom-border-left;
     @include custom-border-right;
     li {
@@ -45,13 +48,14 @@ ul.top-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 31px;
+    justify-content: center;
+    padding-left: 30px;
     label img{
         width: 24px;
         height: 24px;
     }
     input {
-        padding: 10px 54px 10px 15px;
+        padding: 10px 0 10px 15px;
         border: none ;
         background-color: #fff;
         font-family: $regular-font-family;

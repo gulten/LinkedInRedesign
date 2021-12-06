@@ -6,27 +6,34 @@
 }
 .container-md {
     width: $container-md-width;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
 .container-grid-full {
     &-1 {
         display: flex;
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
     &-3 {
         display: grid;
         width: 100%;
-        grid-template-columns: auto $container-xl-width auto;
+        grid-template-columns: 1fr $container-xl-width 1fr;
     }
 }
 
 .container-grid-custom-2 {
     display: grid;
-    grid-template-columns: $container-md-width $sidebar-xl-width;
+    grid-template-columns: $container-md-width auto;
     grid-gap: 40px;
     width: $container-xl-width;
+}
+.no-grid-gap {
+    grid-gap: 0;
 }
 
 
@@ -63,5 +70,5 @@
     justify-content: center !important;
 }
 .justify-start {
-    justify-content: start !important;
+    justify-content: flex-start !important;
 }
