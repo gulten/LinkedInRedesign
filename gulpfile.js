@@ -23,7 +23,7 @@ function buildJs() {
         }))
         .pipe(uglify())
         .pipe(concat('all.js'))
-        .pipe(sourcemaps.write('.'))
+        .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./dist/js'))
 };
 exports.build = gulp.parallel(buildStyles, buildJs);
