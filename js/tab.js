@@ -1,6 +1,6 @@
 class Tab {
-    constructor(...items) {
-        this.items = items[0];
+    constructor(items) {
+        this.items = items;
         this.tabButtonList = document.querySelectorAll(this.items.buttonParent + ' ' + this.items.tabButtonElement);
         this.tabContentList = document.querySelectorAll(this.items.tabs);
         this.tabButtonList.forEach(el => el.addEventListener('click', this.tabClick.bind(this)));

@@ -1,6 +1,6 @@
 class Slider {
-    constructor(...items) {
-        this.items = items[0];
+    constructor(items) {
+        this.items = items;
         this.slider = document.querySelector(this.items.element);
         this.sliderUL = document.querySelector(this.items.element + ' ul');
         this.sliderLiArray = document.querySelectorAll(this.items.element + ' ul li');
