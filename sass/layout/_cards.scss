@@ -173,6 +173,7 @@
                     position: absolute;
                     font-size: 24px;
                     color: $default-active-font-color;
+                    font-weight: 700;
                     top: 100px;
                     z-index: 100;
                     cursor: pointer;
@@ -224,6 +225,7 @@
             display: flex;
             flex-direction: row;
             align-items: flex-end;
+            height: 50px;
         }
         .card-text {
             width: 100%;
