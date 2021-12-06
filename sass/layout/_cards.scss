@@ -169,6 +169,20 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 width: 100%;
+                .arrow-left, .arrow-right {
+                    position: absolute;
+                    font-size: 24px;
+                    color: $default-active-font-color;
+                    top: 100px;
+                    z-index: 100;
+                    cursor: pointer;
+                }    
+                .arrow-left {
+                    left: -20px;
+                }
+                .arrow-right {
+                    right: 0;
+                }
                 ul {
                     position: relative;
                     display: flex;
@@ -176,25 +190,14 @@
                     align-items: flex-start;
                     justify-content: space-between;
                     width: 100%;
-                    &:before, &:after {
-                        position: absolute;
-                        font-size: 24px;
-                        color: $default-active-font-color;
-                        top: 70px;
-                        cursor: pointer;
-                    }    
-                    &:before {
-                        content: "<";
-                        left: -20px;
-                    }
-                    &:after {
-                        content: ">";
-                        right: 0;
-                    }
+                    overflow: hidden;
                     li {
-                        display: flex;
+                        display: none;
                         flex-direction: column;
                         margin-right: 20px;
+                        &.active {
+                            display: flex;
+                        }
                         .title {
                             margin-top: 15px;
                             font-size: 14px;
