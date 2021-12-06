@@ -120,13 +120,13 @@
                 </div><!-- /.profile-card-->
                 <div class="card tab-select-card splitted-content-card m-t-20">
                     <div class="card-title">
-                        <button class="custom-tab active">
+                        <button class="custom-tab active" data-tabName="profile">
                             Profile
                         </button>
-                        <button class="custom-tab">
+                        <button class="custom-tab" data-tabName="activity">
                             Activity & interests
                         </button>
-                        <button class="custom-tab">
+                        <button class="custom-tab" data-tabName="articles">
                             Articles (3)
                         </button>
                     </div>
@@ -134,7 +134,7 @@
 
                     </div>
                 </div><!-- /.tab-select-card-->
-                <div class="card tabs-card splitted-content-card m-t-0">
+                <div class="card tabs-card splitted-content-card m-t-0 active"  data-tabName="profile">
                     <div class="card-title">
                         About
                     </div>
@@ -148,6 +148,36 @@
                     <div class="card-action m-b-30">
                         <a class="bold upper-case active-text" href="/">See more</a>
                     </div>
+                </div><!-- /.tabs-card-->
+                <div class="card tabs-card splitted-content-card m-t-0" data-tabName="activity">
+                <div class="card-title">
+                    Activity & interests
+                </div>
+                <div class="card-text p-t-15 p-b-20">
+                    <p>
+                        I'm more experienced in eCommerce web projects and mobile banking apps, but also like to
+                        work with creative projects,
+                        such as landing pages or unusual corporate websites.
+                    </p>
+                </div>
+                <div class="card-action m-b-30">
+                    <a class="bold upper-case active-text" href="/">See more</a>
+                </div>
+                </div><!-- /.tabs-card-->
+                <div class="card tabs-card splitted-content-card m-t-0" data-tabName="articles">
+                <div class="card-title">
+                    Articles (3)
+                </div>
+                <div class="card-text p-t-15 p-b-20">
+                    <p>
+                        I'm more experienced in eCommerce web projects and mobile banking apps, but also like to
+                        work with creative projects,
+                        such as landing pages or unusual corporate websites.
+                    </p>
+                </div>
+                <div class="card-action m-b-30">
+                    <a class="bold upper-case active-text" href="/">See more</a>
+                </div>
                 </div><!-- /.tabs-card-->
                 <div class="card splitted-content-card projects-card m-t-20">
                     <div class="card-title">
@@ -530,6 +560,9 @@
     <script src="./js/all.js"></script>
     <script>
         const slider = new Slider({ 'element': '#slider', 'leftButton': '.arrow-left', 'rightButton': '.arrow-right' });
+        const tab = new Tab({ 'buttonParent': '.tab-select-card', 'tabButtonElement': '.custom-tab', 'tabs': '.tabs-card'});
+        
+        
     </script>
 </body>
 

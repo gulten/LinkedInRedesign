@@ -234,6 +234,10 @@
         }
     }
     &.tabs-card {
+        display: none;
         border-radius: 0 0 $default-border-radius $default-border-radius;
+        &.active {
+            display: flex;
+        }
     }
 }
