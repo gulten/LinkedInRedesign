@@ -12,7 +12,7 @@ function buildStyles() {
         .pipe(sourcemaps.init())
         .pipe(autoprefixer())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-        .pipe(sourcemaps.write('./maps'))
+        //.pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./dist/css'));
 };
 function buildJs() {
@@ -23,7 +23,7 @@ function buildJs() {
         }))
         .pipe(uglify())
         .pipe(concat('all.js'))
-        .pipe(sourcemaps.write('./maps'))
+        //.pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./dist/js'))
 };
 exports.build = gulp.parallel(buildStyles, buildJs);
