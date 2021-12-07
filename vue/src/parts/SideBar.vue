@@ -8,7 +8,7 @@
             <div class="card-text flex-column d-align-start justify-start">
                 <div class="info-panel">
                     <div class="count-info">
-                        367
+                        {{ viewToday }}
                     </div>
                     <p>
                         views today
@@ -16,7 +16,7 @@
                 </div>
                 <div class="info-panel">
                     <div class="count-info">
-                        15
+                        {{ postView }}
                     </div>
                     <p>
                         posts views
@@ -24,7 +24,7 @@
                 </div>
                 <div class="info-panel">
                     <div class="count-info">
-                        9
+                        {{ searchView }}
                     </div>
                     <p>
                         search appereances
@@ -134,7 +134,6 @@
 <script>
 export default {
   name: 'SideBar',
-  props: {
-  }
+  props: ['viewToday', 'postView', 'searchView']
 }
 </script>

@@ -10,7 +10,7 @@
               <Content></Content>
             </div>
             <div class="right">
-              <side-bar></side-bar>              
+              <side-bar :view-today="viewToday" :post-view="postView" :search-view="searchView"></side-bar>              
             </div>
         </div>
     </div>
@@ -55,7 +55,22 @@ export default {
           title: "Drozd. Brand identity. 2016",
           text: "Graphic design, 03.04.2016"
         }
-      ]
+      ],
+      viewToday: 0,
+      postView: 0,
+      searchView: 0
+    }
+  },
+  mounted: function () {
+    this.$nextTick(function () {
+      this.getCount();
+    })
+  },
+  methods:{
+    getCount(){
+      this.viewToday = 367;
+      this.postView = 15;
+      this.searchView = 9;
     }
   }
 }
