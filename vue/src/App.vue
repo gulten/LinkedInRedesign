@@ -6,7 +6,7 @@
             <div class="left">
               <Profile></Profile>
               <Tabs></Tabs>
-              <Slider></Slider>
+              <slider :items="slideList" />
               <Content></Content>
             </div>
             <div class="right">
@@ -36,6 +36,27 @@ export default {
     Slider,
     Content,
     Footer
+  },
+  data: function () {
+    return {
+      slideList: [
+        {
+          image : "images/thumbs/ext.jpg",
+          title: "Zara redesign concept",
+          text: "UX/UI design, 15.07.2019"
+        },
+        {
+          image : "images/thumbs/ext-2.jpg",
+          title: "SCTHON event brand identity",
+          text: "raphic design, 03.31.2019"
+        },
+        {
+          image : "images/thumbs/ext-3.jpg",
+          title: "Drozd. Brand identity. 2016",
+          text: "Graphic design, 03.04.2016"
+        }
+      ]
+    }
   }
 }
 </script>

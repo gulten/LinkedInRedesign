@@ -1,47 +1,17 @@
 <template>
     <div class="card splitted-content-card projects-card m-t-20">
                     <div class="card-title">
-                        Projects <span>3 of 12</span>
+                        Projects <span>3 of {{ items.length }}</span>
                     </div>
                     <div class="card-text">
                         <div id="slider" class="slider">
                             <div class="arrow-left">&#60;</div>
                             <div class="arrow-right">&#62;</div>
                             <ul>
-                                <li class="active">
-                                    <img src="images/thumbs/ext.jpg" alt="">
-                                    <div class="title">Zara redesign concept</div>
-                                    <div class="text">UX/UI design, 15.07.2019</div>
-                                </li>
-                                <li class="active">
-                                    <img src="images/thumbs/ext-2.jpg" alt="">
-                                    <div class="title">SCTHON event brand identity</div>
-                                    <div class="text">Graphic design, 03.31.2019</div>
-                                </li>
-                                <li class="active">
-                                    <img src="images/thumbs/ext-3.jpg" alt="">
-                                    <div class="title">Drozd. Brand identity. 2016</div>
-                                    <div class="text">Graphic design, 03.04.2016</div>
-                                </li>
-                                <li>
-                                    <img src="images/thumbs/ext.jpg" alt="">
-                                    <div class="title">Drozd. Brand identity. 2016</div>
-                                    <div class="text">Graphic design, 03.04.2016</div>
-                                </li>
-                                <li>
-                                    <img src="images/thumbs/ext-2.jpg" alt="">
-                                    <div class="title">Drozd. Brand identity. 2016</div>
-                                    <div class="text">Graphic design, 03.04.2016</div>
-                                </li>
-                                <li>
-                                    <img src="images/thumbs/ext-3.jpg" alt="">
-                                    <div class="title">Drozd. Brand identity. 2016</div>
-                                    <div class="text">Graphic design, 03.04.2016</div>
-                                </li>
-                                <li>
-                                    <img src="images/thumbs/ext.jpg" alt="">
-                                    <div class="title">Drozd. Brand identity. 2016</div>
-                                    <div class="text">Graphic design, 03.04.2016</div>
+                                <li v-for="(item, index) in items" :key="index" class="active">
+                                    <img :src="item.image" alt="">
+                                    <div class="title">{{ item.title }}</div>
+                                    <div class="text">{{ item.text }}</div>
                                 </li>
                             </ul>
                         </div>
@@ -54,7 +24,6 @@
 <script>
 export default {
   name: 'Slider',
-  props: {
-  }
+  props: ['items']
 }
 </script>
